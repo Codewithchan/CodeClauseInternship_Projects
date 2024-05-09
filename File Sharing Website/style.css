@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper{
+  background: #A770EF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FDB99B, #CF8BF3, #A770EF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  height: 100vh;
+}
+
+.container{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.page{
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.5) ;
+}
+
+.header{
+  border-radius: 5px 5px;
+  background-image: linear-gradient(to bottom, #fff 0%, #f6f6f6 100%);
+}
+
+.logo strong{
+  font-family: "Montez", cursive;
+  font-size: 20px;
+}
+
+.profile{
+  font-size: 24px;
+}
+
+.text::before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  color: #d8d8d8;
+  width: 0;
+  height: 20px;
+  left: 1px;
+  border-left: 1px solid #d8d8d8;
+  position: relative;
+  margin: 0 15px;
+}
+
+a,.text{
+  font-weight: 600;
+  color: #0093b4;
+  cursor: pointer;
+}
+
+.text,.profile:hover{
+  color: #000;
+}
+
+.intro h1{
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* center the input and label vertically & horizantally */
+
+.input-center{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* style the file input element */
+
+.input-center input[type="file"]{
+  display: none;  /*Hide the default input */
+}
+
+.custom-file-lab{
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+
+
+@media screen and (min-width:480px){
+  .header{
+    line-height: 39px;
+  }
+  
+}
+
+
+@media screen and (min-width:640px){
+  .header{
+    padding: 20px 30px;
+  }
+
+  .content{
+    padding: 30px 35px;
+  }
+
+  .intro{
+    padding: calc(10% + 30px), calc(10% + 35px);
+    text-align: center;
+  }
+
+  .intro h1{
+    font-size: 50px;
+  }
+  
+}
+
+@media screen and (min-width:639px){
+
+.intro{
+    padding: calc(5% + 20px), calc(5% + 10px);
+    text-align: center;
+  }
+}
+
+
+/* -- YouTube Link Styles -- */
+
+#source-link {
+  top: 60px;
+}
+
+#source-link>i {
+  color: rgb(0, 26, 255);
+}
+
+#yt-link {
+  top: 10px;
+}
+
+#yt-link>i {
+  color: rgb(219, 31, 106);
+
+}
+
+.meta-link {
+  align-items: center;
+  backdrop-filter: blur(3px);
+  background-color: rgba(12, 9, 9, 0.199);
+  border: 1px solid rgb(54, 54, 54);
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 5px;
+  left: 10px;
+  padding: 10px 20px;
+  position: fixed;
+  text-decoration: none;
+  transition: background-color 600ms, border-color 600ms;
+  z-index: 10000;
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #000000(0, 255, 229, 0.86);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ffffff ,0 0 20px #e0e0dd;
+}
+
+.meta-link>i,
+.meta-link>span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link>span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
